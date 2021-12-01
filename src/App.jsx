@@ -1,5 +1,6 @@
 
-//import './App.css';
+import './App.css';
+import Logo from './img/logo.png'  
 import * as S from './App.styles';
 import * as C from './components/Create.styles';
 import * as L from './components/List.styles';
@@ -79,7 +80,7 @@ const useStyles = makeStyles((theme) => ({
 
 const initialFormState = { name: '', check: false}
 
-
+const teste = {Boolean}
 function App() {
 
   const [todos, setTodos] = useState([]);
@@ -143,7 +144,8 @@ function App() {
       
       <S.Container>
         <S.Centro>
-          <S.Header>TodoList
+          <S.Header>
+            <img class='App-logo' src={Logo}/>
             <S.sub>Sua Lista de Tarefas online</S.sub>
           </S.Header>
       <C.Container> 
@@ -152,33 +154,36 @@ function App() {
         onChange={e => setFormData({ ...formData, 'name': e.target.value })}
         placeholder="Adicione uma nova tarefa..."
         value={formData.name}
-        //onEnter={createTodo}  
+
       />
+
       <Fab 
-        
+
         size="small" 
         component="span" 
         aria-label="add" 
         onClick={createTodo}
         >
         <AddIcon/>
+
       </Fab>
-      {/*<button onClick={createTodo}>Adicionar Tarefa</button>*/}
-      </C.Container>   
-      
+
+      </C.Container>  
+
       <div style={{marginBottom: 30}}>
         {
           todos.map(todo => (
+
             <div key={todo.id || todo.name}>
-              
              
+
               <L.Constainer>
                 
                 <input 
                 type="checkbox"
-                checked={formData.check}
-                onChange={e => setFormData({ ...formData, 'check': e.target.value })}
-                value={formData.check}
+                checked={teste}
+                onChange={e => setFormData({ ...formData, 'check': e.target.checked })}
+                //value={formData.check}
                 />
                 <label>{todo.name}</label>
                 
