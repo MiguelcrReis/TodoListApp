@@ -1,8 +1,8 @@
 
 //import './App.css';
 import * as S from './App.styles';
-import * as C from './Create.styles';
-import * as L from './List.styles';
+import * as C from './components/Create.styles';
+import * as L from './components/List.styles';
 import IconButton from '@material-ui/core/IconButton'
 import AddIcon from '@material-ui/icons/Add'
 //import AddTaskIcon from '@mui/icons-material/AddTask';
