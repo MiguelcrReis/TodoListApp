@@ -28,6 +28,44 @@
   color: #61dafb;
 }
 
+.Container{
+  background-color: #836FFF;
+  color: #FFF;
+  min-height: 100vh;
+}
+.Centro{
+  margin: auto; 
+  max-width: 980px;
+  padding: 10px;
+}
+.Header {
+  border: 1px solid #555;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  }
+.sub{
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+  text-align: center;
+}
+
+input{
+  border: 0px;
+    background: transparent;
+    outline: 0;
+    color: #FFF;
+    font-size: 18px;
+    flex: 1;
+  }
+  input::placeholder{
+    color: #C0C0C0;
+  }
+
+
 
 
 @keyframes App-logo-spin {
