@@ -136,14 +136,13 @@ function App() {
 
               <L.Constainer check={isChecked}>
                 
-                <input 
+                <input
                 type="checkbox"
-                
-                
                 //onChange={e => setIsChecked( e.target.checked)}
                 //onChange={updateTodo(todo.id, todo.check)}
                 //value={formData.check}
                 />
+                
                 <label>{todo.name}</label>
                 
                   <IconButton edge="end" aria-label="delete" onClick={() => deleteTodo(todo)} variant="contained" color="black">
