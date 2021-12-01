@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
+const checkTask = Boolean;
 
-
-export const Constainer = styled.div
+export const Constainer = styled.div(({checkTask}) => ( 
 `
 display: flex;
 background-color: #8A2BE2;
@@ -18,6 +18,8 @@ input {
   
 }
 
+label{
+  text-decoration: ${checkTask ? 'line-through' : 'initial'};
+}
 
-
-`;
+`));
